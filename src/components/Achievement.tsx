@@ -16,19 +16,19 @@ const Achievement = () => {
           <ResumeCard
             title="AWS Certified Cloud Practitioner"
             subTitle="AWS"
-            [cite_start]result="Jul 2024 - Jul 2027" // [cite: 44, 48]
+            result="Jul 2024 - Jul 2027"
           />
           <ResumeCard
             title="AWS Certified Solutions Architect Associate"
             subTitle="AWS"
-            [cite_start]result="Aug 2024 - Aug 2027" // [cite: 45, 49]
+            result="Aug 2024 - Aug 2027"
           />
         </div>
       </div>
-      {/* The "Batches" section from your original code doesn't have corresponding information in the provided resume. 
-          If you have other certifications or achievements not listed in the resume, you can add them here.
-          Otherwise, consider removing or renaming this section based on what you want to display. */}
-      {/* <div>
+
+      {/* Optional Batches section */}
+      {/* 
+      <div>
         <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
           <h2 className="text-3xl md:text-4xl font-bold">Batches</h2>
         </div>
@@ -49,7 +49,8 @@ const Achievement = () => {
             result="Completed"
           />
         </div>
-      </div> */}
+      </div> 
+      */}
     </motion.div>
   );
 };
