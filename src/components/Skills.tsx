@@ -20,7 +20,7 @@ const Skills = () => {
             "HTML/CSS",
             "JavaScript",
             "Data Structures and Algorithms",
-          ].map((skill, i) => (
+          ].map((skill) => (
             <div className="overflow-x-hidden" key={skill}>
               <p className="text-sm uppercase font-medium">{skill}</p>
               <span className="w-full h-2 bgOpacity rounded-md inline-flex mt-2">
