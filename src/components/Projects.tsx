@@ -1,6 +1,6 @@
 import Title from "./Title";
 import ProjectsCard from "./ProjectsCard";
-import { projectOne, projectTwo } from "../assets"; // Assuming these are placeholder images, replace if you have specific ones for your projects
+import { projectOne, projectTwo } from "../assets"; // Replace with actual images if needed
 import { FadeIn } from "./FadeIn";
 
 const Projects = () => {
@@ -16,16 +16,18 @@ const Projects = () => {
             des="My Projects"
           />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14 mt-10">
           <ProjectsCard
             title="GenoCryptNet"
-            [cite_start]des="Developed GenoCryptNet, a cutting-edge system that integrates multiple advanced cryptographic techniques for secure data communication. Engineered embedding and extraction algorithms to hide DNA-encoded data within images securely. Created a DNA decoding and decryption process to accurately restore the original plaintext from encoded sequences."
-            src={projectOne} // Placeholder image
+            des="Developed GenoCryptNet, a cutting-edge system that integrates advanced cryptographic techniques for secure data communication. Implemented embedding/extraction algorithms to hide DNA-encoded data in images. Designed a decoding and decryption pipeline to restore original plaintext from DNA sequences."
+            src={projectOne}
           />
+
           <ProjectsCard
             title="Mental Health Chatbot"
-            [cite_start]des="Built a Mental Health Chatbot using a pre-trained BERT model fine-tuned for sequence classification. Implemented text cleaning, tokenization using Hugging Face Transformers, and feature extraction for data preprocessing. Enabled real-time prediction and response generation leveraging a mapped response database. Used Seaborn and Matplotlib for intent and response distribution analysis."
-            src={projectTwo} // Placeholder image
+            des="Built a Mental Health Chatbot using a fine-tuned BERT model for sequence classification. Used Hugging Face Transformers for tokenization, and implemented real-time prediction with a response mapping system. Conducted data analysis using Seaborn and Matplotlib."
+            src={projectTwo}
           />
         </div>
       </FadeIn>
