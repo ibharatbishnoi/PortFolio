@@ -15,22 +15,20 @@ const Education = () => {
         </div>
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
-            [cite_start]title="B.Tech in Computer Science" [cite: 8]
-            [cite_start]subTitle="Vellore Institute of Technology (2021-2025)" [cite: 7, 16]
-            [cite_start]result="CGPA 8.11" [cite: 9]
+            title="B.Tech in Computer Science"
+            subTitle="Vellore Institute of Technology (2021-2025)"
+            result="CGPA 8.11"
             des="Currently pursuing my B.Tech in Computer Science at Vellore Institute of Technology, with an expected graduation in 2025. Gaining hands-on experience in algorithms, data structures, and software engineering, I'm passionate about contributing innovative solutions to the tech industry."
           />
 
           <ResumeCard
-            [cite_start]title="Higher Secondary Education" [cite: 11]
-            [cite_start]subTitle="Chhatrapati Shivaji Sr Sec Sch (2018-2020)" [cite: 10, 18]
-            [cite_start]result="Percentage 66%" [cite: 12]
+            title="Higher Secondary Education"
+            subTitle="Chhatrapati Shivaji Sr Sec Sch (2018-2020)"
+            result="Percentage 66%"
             des="I completed my higher secondary education at Chhatrapati Shivaji Sr Sec Sch, laying the groundwork for my current pursuit of a B.Tech in Computer Science."
           />
 
-          {/* There is no information about "Secondary School Education" from St. Paul's School in the provided resume.
-              If you have this information from another source, you can add it. Otherwise, this section should be removed
-              to accurately reflect the resume. */}
+          {/* Uncomment and complete if you want to include this section */}
           {/* <ResumeCard
             title="Secondary School Education"
             subTitle="St. Paul's School, Darjeeling (2016 - 2018)"
