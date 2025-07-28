@@ -15,16 +15,16 @@ const Experience = () => {
         <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
           <ResumeCard
             title="Full Stack Developer Intern"
-            [cite_start]subTitle="Capabl (from Elite Techno Groups) - (June 2023 - July 2023)" [cite: 14, 15, 20, 21]
-            [cite_start]result="Remote" [cite: 21]
-            [cite_start]des="Developed a text-based Python Hangman game with features like user-input letter guessing, random word selection, and dynamic display manipulation to provide an interactive challenge. [cite: 22] [cite_start]Created a fully functional Library Management System using Java that automated the entire process of book cataloging, achieving an average processing speed improvement of more than two-fold when managing transactions." [cite: 23, 24]
+            subTitle="Capabl (from Elite Techno Groups) - (June 2023 - July 2023)"
+            result="Remote"
+            des="Developed a text-based Python Hangman game with features like user-input letter guessing, random word selection, and dynamic display manipulation to provide an interactive challenge. Created a fully functional Library Management System using Java that automated the entire process of book cataloging, achieving an average processing speed improvement of more than two-fold when managing transactions."
           />
 
           <ResumeCard
             title="Social Media Head"
-            [cite_start]subTitle="Rajasthan Cultural Club - (June 2022 - July 2023)" [cite: 25, 26, 27]
-            [cite_start]result="Chennai, TN" [cite: 27]
-            [cite_start]des="Led a successful social media strategy to increase engagement and visibility for cultural events, boosting student participation. [cite: 28] [cite_start]Organized and promoted multiple cultural events, enhancing cultural awareness and community involvement." [cite: 29]
+            subTitle="Rajasthan Cultural Club - (June 2022 - July 2023)"
+            result="Chennai, TN"
+            des="Led a successful social media strategy to increase engagement and visibility for cultural events, boosting student participation. Organized and promoted multiple cultural events, enhancing cultural awareness and community involvement."
           />
         </div>
       </div>
