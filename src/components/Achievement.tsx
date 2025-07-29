@@ -1,57 +1,51 @@
-import { motion } from "framer-motion";
-import ResumeCard from "./ResumeCard";
+import React from "react";
+import Title from "./Title";
+import { FadeIn } from "./FadeIn";
+import { FaCertificate, FaDownload } from "react-icons/fa";
 
 const Achievement = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
-    >
-      <div>
-        <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <h2 className="text-3xl md:text-4xl font-bold">Certifications</h2>
-        </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[600px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="AWS Certified Cloud Practitioner"
-            subTitle="AWS"
-            result="Jul 2024 - Jul 2027"
-          />
-          <ResumeCard
-            title="AWS Certified Solutions Architect Associate"
-            subTitle="AWS"
-            result="Aug 2024 - Aug 2027"
-          />
+    <FadeIn>
+      <div className="w-full flex flex-col gap-10">
+        <Title title="ACHIEVEMENTS" des="My Certificates" />
+
+        <div className="flex flex-col gap-6 text-left max-w-3xl mx-auto">
+          <div className="bg-gray-800 p-6 rounded-lg shadow shadow-shadowOne">
+            <h3 className="text-xl font-semibold text-white flex items-center gap-2">
+              <FaCertificate className="text-yellow-400" />
+              AWS Certified Cloud Practitioner (2024 – 2027)
+            </h3>
+            <p className="text-gray-400 mt-2">
+              Foundational-level certification covering AWS Cloud concepts.
+            </p>
+            <a
+              href="/aws-cloud.pdf"
+              download
+              className="inline-flex items-center mt-3 text-sm text-teal-400 hover:text-teal-200 transition"
+            >
+              <FaDownload className="mr-2" /> Download Certificate
+            </a>
+          </div>
+
+          <div className="bg-gray-800 p-6 rounded-lg shadow shadow-shadowOne">
+            <h3 className="text-xl font-semibold text-white flex items-center gap-2">
+              <FaCertificate className="text-yellow-400" />
+              AWS Certified Solutions Architect – Associate (2024 – 2027)
+            </h3>
+            <p className="text-gray-400 mt-2">
+              Certification for designing scalable and resilient AWS architectures.
+            </p>
+            <a
+              href="/aws-solutions.pdf"
+              download
+              className="inline-flex items-center mt-3 text-sm text-teal-400 hover:text-teal-200 transition"
+            >
+              <FaDownload className="mr-2" /> Download Certificate
+            </a>
+          </div>
         </div>
       </div>
-
-      {/* Optional Batches section */}
-      {/* 
-      <div>
-        <div className="py-6 lgl:py-12 font-titleFont flex flex-col gap-4">
-          <h2 className="text-3xl md:text-4xl font-bold">Batches</h2>
-        </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[600px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
-          <ResumeCard
-            title="Developing Back-End Apps with Node.js and Express"
-            subTitle="IBM | Coursera"
-            result="Completed"
-          />
-          <ResumeCard
-            title="Python for Data Science, AI & Development"
-            subTitle="IBM | Coursera"
-            result="Completed"
-          />
-          <ResumeCard
-            title="Web Development with HTML, CSS, JavaScript Essentials"
-            subTitle="IBM | Coursera"
-            result="Completed"
-          />
-        </div>
-      </div> 
-      */}
-    </motion.div>
+    </FadeIn>
   );
 };
 
